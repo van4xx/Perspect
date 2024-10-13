@@ -1,0 +1,289 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 1vw;
+  margin: 0;
+  padding: 0;
+}
+
+
+#app {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+}
+
+.site-loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coords {
+  font-weight: 900;
+  font-size: 10em;
+  font-family: 'Arial Black';
+}
+
+.coords span {
+  color: #749FC9;
+}
+
+.site-loader p {
+  font-weight: normal;
+  font-size: 3em;
+  font-family: 'Helvetica';
+  rotate: 180deg;
+  letter-spacing: 1.75em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+.firstBlock h1 {
+  font-size: 9em;
+  font-weight: 900;
+  font-family: 'Arial Black';
+  text-align: start;
+  line-height: 1em;
+}
+
+.firstBlock h1 span {
+  color: #425871;
+}
+
+.firstBlock p {
+  font-size: 2.75em;
+  font-weight: 900;
+  font-family: 'Arial Black';
+  text-align: start;
+}
+
+.firstBlock p span {
+  color: #EB6420;
+}
+
+.firstBlock img {
+  width: 100%;
+  height: 80vh;
+  border-radius: 20px;
+}
+
+.secondBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.secondBlock h1 {
+  font-size: 9em;
+  font-weight: 900;
+  font-family: 'Arial Black';
+  text-align: start;
+  line-height: 1em;
+}
+
+.secondBlock h1 span {
+  color: #425871;
+}
+
+.secondBlock p {
+  font-size: 2.75em;
+  font-weight: 900;
+  font-family: 'Arial Black';
+  text-align: start;
+}
+
+.secondBlock p span {
+  color: #425871;
+}
+
+.secondBlock img {
+  width: 100%;
+  height: 106vh;
+  border-radius: 20px;
+}
+
+.thirdBlock {
+  height: 100vh; /* Карточки занимают 100% высоты экрана */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.thirdBlockCard {
+  width: 100%;
+  height: 100vh; /* Каждая карточка также 100% высоты экрана */
+  display: flex;
+  gap: 10px;
+  transition: transform 0.8s ease-in-out; /* Плавная анимация перехода */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.thirdBlockCardLeft img {
+  width: 52em;
+  height: 100vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.thirdBlockCardRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.thirdBlockCardRight h1 {
+  font-size: 5em;
+  font-weight: 900;
+  font-family: 'Arial Black';
+  text-align: start;
+  line-height: 1em;
+}
+
+.thirdBlockCardRight span {
+  color: #425870;
+}
+
+.thirdBlockCardRight p {
+  font-weight: 900;
+  font-size: 2em;
+  font-family: 'Arial Black';
+  max-width: 20em;
+}
+
+.fourthBlock {
+  display: flex;
+  flex-direction: column;
+  background: #425871;
+  padding: 20px 10px 20px 10px;
+  border-radius: 20px;
+  gap: 10px;
+  color: #fff;
+}
+
+.fifthBlock h1 {
+  font-size: 9em;
+  font-weight: 900;
+  font-family: 'Arial Black';
+  text-align: start;
+  line-height: 1.25em;
+}
+
+.fifthBlock h1 span:first-of-type {
+  color: #749FC9;
+}
+
+.fifthBlock h1 span:last-of-type {
+  color: #EB6420;
+}
+
+.fifthBlock div {
+  font-size: 1em;
+  font-weight: 900;
+  font-family: 'Arial Black';
+}
+
+.fifthBlock div span {
+  color: #EB6420;
+}
+
+.fourthBlock h2 {
+  font-size: 4em;
+  line-height: 1.25em;
+  font-weight: 700;
+  font-family: 'Arial Black';
+  text-transform: inherit;
+}
+
+.fourthBlock ul.description {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.fourthBlock .description li {
+  font-size: 1.5em;
+  font-family: 'Arial Black';
+  border-top: 1px solid #fff;
+}
+
+.fourthBlock ul.description li ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5em;
+  list-style: disc;
+}
+
+.fourthBlock ul.description li ul li::marker {
+  color: orange;
+}
+
+.fourthBlock ul.description li ul li {
+  border: none;
+}
+
+.fifthBlock p {
+  font-size: 1em;
+  font-weight: 900;
+  font-family: 'Arial Black';
+}
+
+.fifthBlock p:last-of-type {
+  font-size: 1em;
+  font-weight: 900;
+  font-family: 'Arial Black';
+  color: #497D67;
+  padding: 20px 0 10px 0;
+}
+
+.emailBlock {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.emailBlock input {
+  padding: 20px;
+  width: 100%;
+  color: white;
+  border-radius: 40px;
+  border: none;
+  background: #749FC9;
+  font-weight: bold;
+  font-size: 5em;
+}
+
+.emailBlock input::placeholder {
+  color: white;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.emailBlock button {
+  padding: 10px;
+  border-radius: 100px;
+  border: none;
+  background: #749FC9;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+}
